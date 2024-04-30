@@ -1,0 +1,7 @@
+#Main program loop
+loop
+    #Determine what the next tile is and take action. If it is greater than zero, move forward. If not, turn. Then loop starts again.
+    if robo_scan() > 0
+        robo_forward()
+    else
+        robo_left()
