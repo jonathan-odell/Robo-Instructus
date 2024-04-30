@@ -1,0 +1,5 @@
+#Simple loop to move. All exits are diagonally left from the start.
+loop
+    robo_forward()
+    robo_left()
+    robo_forward()
