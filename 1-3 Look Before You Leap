@@ -1,0 +1,13 @@
+#This introduced the scan ability
+
+#In all cases move robo forward first
+robo_forward()
+#Do a scan on the next tile and store it in SCAN.
+var scan = robo_scan()
+#If it is greater than 0, then it is solid. Move forward on to it.
+if scan > 0
+    robo_forward()
+#If it is not then it is NOT solid. Turn and go the other way.
+else
+    robo_left()
+    robo_forward()
