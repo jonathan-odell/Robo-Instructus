@@ -1,0 +1,14 @@
+#Define the function of moving forward and turning left after
+fun f_and_l()
+    robo_forward()
+    robo_left()
+
+#Begin main programing
+#Execute the moving function once, then go forward twice, then the function thre more times.
+f_and_l()
+for loop_count in 1,2
+    robo_forward()
+f_and_l()
+f_and_l()
+f_and_l()
+
